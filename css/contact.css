@@ -1,0 +1,168 @@
+/*contact page*/
+/* Adjust the vertical position of the section */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color:white;
+  overflow-y: auto;
+  flex-direction: column;
+  min-height: 400px;
+  
+
+
+}
+.map{
+    transform: translateY(1500px);
+    margin-left: 250px;
+  }
+  .mtlogo{
+    height: 168px;
+    width: 567;
+    transform: translateY(800px);
+    margin-left: 170px;
+  }
+  .isgilogo{
+    width: 209px;
+    height: 148px;
+    transform: translateY(630px);
+    margin-left: 1100px;
+  
+  }
+  .addresse{
+    transform: translateY(356px);
+    margin-left: 900px;
+  }
+  .mtmail{
+    transform: translateY(330px);
+    margin-left: 340px;
+  }
+  .pn1{
+    transform: translateY(480px);
+    margin-left: 340px;
+  }
+  .contact{height: 31px;
+  width: 31px;
+  background-color: white;
+  margin-left: 300px;
+  transform: translateY(500px);
+  border-radius: 0.5rem;
+  margin-top: -100px;
+  
+  }
+  .contact2{height: 31px;
+  width: 31px;
+  background-color: white;
+  margin-left: 300px;
+  margin-top: -10px;
+  transform: translateY(500px);
+  border-radius: 0.5rem;}
+  
+  .logomtc{
+    height: 200px;
+    width: auto;
+    margin-left: 1100px;
+    transform: translateY(200px);
+  }
+  .title{
+    margin-top: -250px;
+    margin-left: 250px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .title2{
+    margin-top: -250px;
+    margin-left: 250px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .form__group{
+    margin-left: 150px;
+    transform: translateY(-50px);
+  }
+  .hidden {
+    transform: translateY(500px); /* Adjust the value as needed */
+  }
+  
+  /* Adjust the vertical position of the title */
+  .title.hidden {
+    transform: translateY(50px); /* Adjust the value as needed */
+  }
+  
+  /* Adjust the vertical position of the form */
+  .form__group.hidden {
+    transform: translateY(50px); /* Adjust the value as needed */
+  }
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #991d7a, #eb52bf);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #991d7a;
+    font-weight: 700;
+  }
+  .btnform{
+    width: 150px;
+    height: 50px;
+    margin-left: 155px;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+  

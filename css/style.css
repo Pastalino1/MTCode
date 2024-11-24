@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color:white;
+  overflow-y: auto;
+}
+
+
+
+
+/*3d*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /*p {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background: white;
+    border: black 2px solid;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px;
+    width: 120px;
+    color: black;
+  }
+  */
+  .card {
+    background: url("") no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    margin: auto;
+    height: auto;
+    padding: 40px;
+    position: relative;
+    color: #fff;
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .card::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  /* Slight parallax effect on hover */
+  .card:hover .content {
+    transform: translateZ(12px);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Demo only */
+  .container {
+    margin-top: 100px;
+    min-height: 100vh; /* Set minimum height to viewport height */
+  }
+  
+
+
+
+#hero h4,h6,p {
+    padding-bottom: 10px;
+}
+h1{
+    padding-bottom: 25px;
+}
+
+
+.mtchero{
+  margin-top: 170px;
+  margin-left: 228px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  font-size: 24px; /* Set bigger text size */
+  border: 2px solid white; /* Add white thin border */
+  border-radius: 15px; /* Add border radius */
+  padding: 20px; /* Add padding */
+  display: inline-block; /* Limit the border around the text */
+}
+
+/* CSS for styling the paragraph with class "fv" */
+.fv{
+    padding-bottom: 40px;
+}
+
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,,255,1) 100%);
+}
+.box div  {
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: transparent;
+  border: 6px solid #7c7e80;
+
+}
+.box div:nth-child(1){  
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){  
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){  
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(4){  
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){  
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){  
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){  
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){  
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){  
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(10){  
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+@keyframes animate{
+
+0%{
+
+  transform: scale(0) translateY(0) rotate(0);
+  opacity: 1;
+
+}
+100%{
+
+  transform: scale(1.3) translateY(-90px) rotate (360deg);
+  opacity: 0;
+
+}  }
+
+
+
+
+
+
+
+
+
+@keyframes  color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+
+
+
+/*Header*/
+#header {
+    /* this code will create a space between the logo and the nav bar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px; /* reduced padding to make it thinner */
+
+    /* Linear gradient background with three colors from left to right */
+    background: linear-gradient(to right, #080A19 10%, #051D48 65%, #003E99 82%); /* Example gradient colors */
+    /* Adjust the percentages as needed */
+    /* Here, #ff3333 starts at 10% (left), #ff6666 dominates from 10% to 50%, and #ffcccc appears at 50% to 95% (right) */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); /* to add shadow between header and boddy :
+    fomula: box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color]; */
+
+    /* we want to pin the navbar so its fixed when we scroll+make shadow visible: */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* This makes the navbar a nice row (Home-Shop-Blog...) not an ugly column */
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px; /* increased padding to add more space between links */
+    /* this removes the bullets of the list cuz it looks unclear,
+    also adds space (Home - Shop...) via padding */
+    position: relative; /* this is for the underline effect in :after selector */
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 14px; /* reduced font size for better fit */
+    font-weight: 600;
+    color: white;
+    /* this removes the underline from navbar links and changes the color to black. */
+    transition: 0.3s ease;
+}
+#navbar li a:hover {
+    color: cornflowerblue;
+    /* when you hover with your mouse it changes color(dope af) */
+    /* the transition property in the previous selector make it smoother */
+}
+
+/* Add margin to the button */
+#navbar li:last-child {
+    margin-left: 50px; /* Adjust as needed */
+}
+
+/* Remove underline effect from navbar button */
+#navbar li:last-child a:hover::after {
+    content: none; /* Remove the content to remove the underline effect */
+}
+
+.logo {
+    width: 280px; /* reduced logo width for better proportion */
+    height: 80px; /* reduced logo height for better proportion */
+}
+
+
+
+
+/* Navbar toggle icon */
+
+.navbar-toggle {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Change the appearance of bars for the hamburger icon */
+.navbar-toggle.active .bar:first-child {
+    transform: rotate(-45deg) translate(-2px, 5px);
+}
+
+.navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active .bar:last-child {
+    transform: rotate(45deg) translate(-2px, -5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #navbar {
+        display: none;
+    }
+    
+    .navbar-toggle {
+        display: flex; /* Display the hamburger icon on smaller screens */
+        flex-direction: column; /* Arrange the bars vertically */
+        align-items: flex-end; /* Align the icon to the right */
+        margin-right: 20px;
+    }
+    
+    #navbar.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #080A19;
+        padding-top: 20px;
+        animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in animation */
+    }
+    
+    #navbar.active li {
+        margin: 10px 0;
+    }
+    
+    /* Keyframes for smooth fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Button Styles */
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: white;
+    background: #0068FF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
